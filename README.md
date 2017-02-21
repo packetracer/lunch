@@ -10,15 +10,15 @@ TWEAKING THE FILE:
 You can just tweak the variable names and lists for whatever fits your environment.  If your lunch group's picky eater is named Jeremiah, alter the script by replacing the instances of the word "josh" with that of "jeremiah".  Or substitute with "veto" if the group maintains a communal veto list.  I do not care what you do. 
 
 USAGE:
->python lunch.py
+>python lunch.py arg1 arg2
 
 Conditions are:
 
-Argument 1 (optional): josh 
+Argument 1: josh 
 
 Argument 2: cheap or ncheap
 
-If you do not use the josh parameter, it will just look for cheap or ncheap options being passed.
+If you do not use the josh parameter, it will just look for cheap or ncheap options being passed.  You don't have to pass arg1 if you wish to use arg2.
 
 Usage:
 The script loads choices from two lists, cheapeats.txt and notcheapeats.txt.  It then randomly chooses a place from this list, as long as it hasn't been chosen in the past 5 choices.  The past 5 picks are stored in the atethere.txt file.  The places josh will never let us go are stored in vetolist.txt
