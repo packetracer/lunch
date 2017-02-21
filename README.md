@@ -2,7 +2,9 @@
 This is a shitty python script with piss poor fundamental logic that all it does is picks where to eat lunch based on a few conditions.  At this time you can specify two parameters- josh and (cheap or ncheap).  
 
 Conditions are:
+
 Argument 1 (optional): josh 
+
 Argument 2: cheap or ncheap
 
 If you do not use the josh parameter, it will just look for cheap or ncheap options being passed.
