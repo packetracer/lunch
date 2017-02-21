@@ -10,7 +10,7 @@ Argument 2: cheap or ncheap
 If you do not use the josh parameter, it will just look for cheap or ncheap options being passed.
 
 Usage:
-The script loads choices from two lists, cheapeats.txt and notcheapeats.txt.  It then randomly chooses a place from this list, as long as it hasn't been chosen in the past 5 choices.  The past 5 picks are stored in the notagain.txt file.  The places josh will never let us go are stored in vetolist.txt
+The script loads choices from two lists, cheapeats.txt and notcheapeats.txt.  It then randomly chooses a place from this list, as long as it hasn't been chosen in the past 5 choices.  The past 5 picks are stored in the atethere.txt file.  The places josh will never let us go are stored in vetolist.txt
 
 [SCENARIO 1: Josh is coming and we have to eat somewhere cheap]
 >python lunch.py josh cheap
