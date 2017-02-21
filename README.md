@@ -2,7 +2,12 @@
 This is a shitty python script with piss poor fundamental logic that all it does is picks where to eat lunch based on a few conditions.  At this time you can specify two parameters- josh and (cheap or ncheap).  
 
 INSTALLATION:
-Put all of these files in the same directory.  Edit the lists as necessary.  If you are using Windows, make sure to edit this shit with notepad++ or something that can interpret Linux carriage returns.  Or unix2dos the file, or recreate the simple flat files with windows based text formatted documents.  Do whatever, these are just simple lists.  Finally, with python installed, execute the script lunch.py
+
+Put all of these files in the same directory.  Edit the lists as necessary.  If you are using Windows, make sure to edit this shit with notepad++ or something that can interpret Linux carriage returns.  Or unix2dos the file, or recreate the simple flat files with windows based text formatted documents.  Do whatever, these are just simple lists.  Finally, with python installed, execute the script lunch.py.  MAKE SURE TO ADJUST YOUR WEBHOOK URL TO FIT YOUR SLACK ENVIRONMENT!!!!  I HAVE SANITIZED MY WEBHOOK URL SO YOU'RE NOT DUMPING INTO MY SLACK CHANNEL.  IF YOU WANT TO USE THE SLACK INTEGRATION, CHANGE THE GOD DAMNED VARIABLE slackurl.  
+
+TWEAKING THE FILE:
+
+You can just tweak the variable names and lists for whatever fits your environment.  If your lunch group's picky eater is named Jeremiah, alter the script by replacing the instances of the word "josh" with that of "jeremiah".  Or substitute with "veto" if the group maintains a communal veto list.  I do not care what you do. 
 
 example:
 >python lunch.py
