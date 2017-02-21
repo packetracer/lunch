@@ -1,6 +1,12 @@
 # lunch
 This is a shitty python script with piss poor fundamental logic that all it does is picks where to eat lunch based on a few conditions.  At this time you can specify two parameters- josh and (cheap or ncheap).  
 
+INSTALLATION:
+Put all of these files in the same directory.  Edit the lists as necessary.  If you are using Windows, make sure to edit this shit with notepad++ or something that can interpret Linux carriage returns.  Or unix2dos the file, or recreate the simple flat files with windows based text formatted documents.  Do whatever, these are just simple lists.  Finally, with python installed, execute the script lunch.py
+
+example:
+>python lunch.py
+
 Conditions are:
 
 Argument 1 (optional): josh 
