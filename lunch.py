@@ -7,10 +7,10 @@ import pycurl
 import json
 
 #STEP 2 INIT BOOLS
-josh=False
+josh = False
 bcheap = False
 ncheap = False
-
+decided = False
 #STEP 3 CHECK ARGS, WARN FOR SHIT INPUT
 if len(sys.argv) > 2:
 	if (sys.argv[1] == 'cheap' and sys.argv[2] == 'ncheap') or (sys.argv[1] == 'ncheap' and sys.argv[2] == 'cheap'):
@@ -74,25 +74,30 @@ if (josh):
 	eats = [x for x in eats if x not in veto]
 
 #SEED RANDOM FUNCTION
-secure_random = random.SystemRandom()
+while not (decided):
+	secure_random = random.SystemRandom()
 
 #SELECT LUNCH SPOT
-lunch = secure_random.choice(eats)
+	lunch = secure_random.choice(eats)
+
+#RUN AND TELL DAT TO CONSOLE
+	print lunch
+#DID GROUP ACCEPT CHOICE? IF SO KILL LOOP
+	vote = raw_input("Yay or nay?")
+	if (vote == 'y' or vote == 'Y' or vote == 'Yay'):
+		decided = True
 
 #ADD CHOICE TO ATE THERE LIST
 AteThere=open("atethere.txt","a")
 AteThere.write(lunch)
 AteThere.close()
 
-#RUN AND TELL DAT TO CONSOLE
-print lunch
-
 #RUN AND TELL DAT TO SLACK
 #DEFINE JSON MESSAGE:
 data = json.dumps({"username": "LUNCH WILL BE AT:", "icon_emoji": ":hamburger:", "text": lunch})
 
 #DEFINE SLACK WEBHOOK URL:
-slackurl='https://hooks.slack.com/services/PUT/YOUR/URLHERE'
+slackurl='https://hooks.slack.com/services/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'
 
 #Create CURL object
 c = pycurl.Curl()
