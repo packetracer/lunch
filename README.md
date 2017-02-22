@@ -42,3 +42,6 @@ Picks from both cheap places and not cheap places, but removes the ones Josh doe
 >python lunch.py josh ncheap
 
 Picks from not cheap place list, removes places Josh doesn't like.
+
+Yay/Nay?
+Confirm suggestion by console input of Y, y, or Yay.
