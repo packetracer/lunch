@@ -97,7 +97,7 @@ AteThere.close()
 data = json.dumps({"username": "LUNCH WILL BE AT:", "icon_emoji": ":hamburger:", "text": lunch})
 
 #DEFINE SLACK WEBHOOK URL:
-slackurl='https://hooks.slack.com/services/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'
+slackurl='https://hooks.slack.com/services/PUT/YOURURL/HERE'
 
 #Create CURL object
 c = pycurl.Curl()
